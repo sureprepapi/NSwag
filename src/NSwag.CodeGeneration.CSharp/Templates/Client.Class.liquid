@@ -173,7 +173,7 @@
 {%     if InjectHttpClient == false and DisposeHttpClient -%}
         var disposeClient_ = true;
 {%     else -%}
-        var disposeClient_ = false;
+        var disposeClient_ = GetDisposeClient();
 {%     endif -%}
         try
         {
